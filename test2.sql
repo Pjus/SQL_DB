@@ -64,9 +64,11 @@ INSERT INTO COMPANY(ID, NAME, AGE, ADDRESS, SALARY)
 VALUES
 (1, 'Paul', 33, 'California', 20000),
 (2, 'Allen', 25, 'Texas', 20000),
+(3, 'kan', 22, 'Sydney', 50000),
 (4, 'Mark', 25, 'Rich-Mond', 65000),
 (5, 'David', 27, 'Texas', 85000),
-(6, 'Teddy', 23, 'Norway', 20000);
+(6, 'Teddy', 23, 'Norway', 20000),
+(7, 'Faker', 25, 'Norway', 80000);
 
 
 -- 테이블 초기화 컬럼은 그대로 있음
@@ -86,9 +88,24 @@ SELECT tbl_name FROM sqlite_master WHERE type = 'table';
 SELECT sql FROM sqlite_master
 WHERE type = 'table' AND tbl_name = 'COMPANY';
 
+-- 다른 테이블에 값 덮어쓰기 칼럼 매칭 해줘야 됨
 INSERT INTO OLD_COMPANY(ID, NAME, AGE, ADDRESS, SALARY)
 SELECT ID, NAME, AGE, ADDRESS, SALARY FROM COMPANY;
 
 SELECT*FROM OLD_COMPANY;
 
-DELETE FROM OLD_COMPANY;
+-- 조건 걸어서 row 삭제
+DELETE FROM OLD_COMPANY
+WHERE ID = 1;
+
+-- 중복 제거해서 보기 제거는 아니고 보여줄때만
+SELECT DISTINCT * FROM OLD_COMPANY;
+
+-- 값 업데이트 
+-- 테이블 이름 변경할 컬럼 = 값 
+-- 조건 안 넣으면 전체 업데이트
+UPDATE OLD_COMPANY
+SET 
+EMAIL = 'wnstjd117@naver.com',
+SALARY = 880000
+WHERE ID = 6;
