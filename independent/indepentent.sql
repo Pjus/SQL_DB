@@ -32,4 +32,5 @@ VALUES
 (40, '정상'),
 (50, '정직');
 
+
 SELECT*FROM VERIFICATION;
