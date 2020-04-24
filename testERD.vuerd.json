@@ -1,0 +1,237 @@
+{
+  "canvas": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "graphql",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase"
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "LECTURE_INFORMATION",
+        "comment": "주석 : 강의정보",
+        "columns": [
+          {
+            "name": "NAME",
+            "comment": "강사이름",
+            "dataType": "TEXT",
+            "default": "",
+            "id": "36a04e0a-d430-4276-a4d3-15be97e92dc1",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "name": "Phone",
+            "comment": "폰번호",
+            "dataType": "TEXT",
+            "default": "",
+            "id": "300fed33-0a17-45df-b916-d29747e24d84",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "id": "ccbd0bf0-796e-413f-8b31-be7a6e582c61",
+        "ui": {
+          "active": false,
+          "top": 103,
+          "left": 173,
+          "widthName": 148,
+          "widthComment": 92,
+          "zIndex": 84
+        }
+      },
+      {
+        "name": "STUDENTS_INFORMATION",
+        "comment": "학생정보",
+        "columns": [
+          {
+            "name": "NAME",
+            "comment": "학생이름",
+            "dataType": "TEXT",
+            "default": "",
+            "id": "36352125-5f94-4577-928f-71f517390f0f",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "id": "19635528-4fc9-45a3-9afc-522944b0f811",
+        "ui": {
+          "active": true,
+          "top": 246,
+          "left": 171,
+          "widthName": 160,
+          "widthComment": 60,
+          "zIndex": 86
+        }
+      }
+    ],
+    "tableFocus": {
+      "focusName": false,
+      "focusComment": false,
+      "focusColumns": [
+        {
+          "selected": true,
+          "focusName": false,
+          "focusDataType": false,
+          "focusNotNull": false,
+          "focusDefault": false,
+          "focusComment": true,
+          "column": {
+            "name": "NAME",
+            "comment": "학생이름",
+            "dataType": "TEXT",
+            "default": "",
+            "id": "36352125-5f94-4577-928f-71f517390f0f",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        }
+      ],
+      "currentFocusTable": false,
+      "currentColumn": {
+        "name": "NAME",
+        "comment": "학생이름",
+        "dataType": "TEXT",
+        "default": "",
+        "id": "36352125-5f94-4577-928f-71f517390f0f",
+        "option": {
+          "autoIncrement": false,
+          "primaryKey": false,
+          "unique": false,
+          "notNull": false
+        },
+        "ui": {
+          "active": false,
+          "pk": false,
+          "fk": false,
+          "pfk": false,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        }
+      },
+      "table": {
+        "name": "STUDENTS_INFORMATION",
+        "comment": "학생정보",
+        "columns": [
+          {
+            "name": "NAME",
+            "comment": "학생이름",
+            "dataType": "TEXT",
+            "default": "",
+            "id": "36352125-5f94-4577-928f-71f517390f0f",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "id": "19635528-4fc9-45a3-9afc-522944b0f811",
+        "ui": {
+          "active": true,
+          "top": 246,
+          "left": 171,
+          "widthName": 160,
+          "widthComment": 60,
+          "zIndex": 86
+        }
+      }
+    },
+    "edit": null,
+    "copyColumns": [],
+    "columnDraggable": null
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [],
+    "draw": null
+  }
+}
