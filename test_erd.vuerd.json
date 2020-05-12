@@ -1,0 +1,204 @@
+{
+  "canvas": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MariaDB",
+    "databaseName": "",
+    "canvasType": "SQL",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase"
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "COMPANY",
+        "comment": "회사",
+        "columns": [
+          {
+            "name": "COMPANY_ID",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 84,
+              "widthComment": 60,
+              "widthDataType": 90,
+              "widthDefault": 60
+            },
+            "id": "444f8732-b3b3-5fb0-fe3e-68fb8436b73a"
+          },
+          {
+            "name": "NAME",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 90,
+              "widthDefault": 60
+            },
+            "id": "cc0558f7-1cbf-d5b7-d060-4a9ebae6d0c9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 29,
+          "top": 43,
+          "zIndex": 38,
+          "widthName": 65,
+          "widthComment": 60
+        },
+        "id": "9f3230bf-96cf-975c-f4a0-514c43b9958d"
+      },
+      {
+        "name": "DEPARTMENT",
+        "comment": "부서",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 90,
+              "widthDefault": 60
+            },
+            "id": "62af4bc3-73bf-dec2-3fd6-46471e90d7ae"
+          },
+          {
+            "name": "NAME",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 90,
+              "widthDefault": 60
+            },
+            "id": "eb6d59d2-8b90-c3ec-a888-be563245c70c"
+          },
+          {
+            "name": "COMPANY_ID",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 84,
+              "widthComment": 60,
+              "widthDataType": 90,
+              "widthDefault": 60
+            },
+            "id": "f84b48aa-887a-b9cb-da24-14476969d7cb"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 512,
+          "top": 121,
+          "zIndex": 42,
+          "widthName": 84,
+          "widthComment": 60
+        },
+        "id": "2659d6f7-3182-beeb-1eac-551618fd735a"
+      }
+    ]
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "start": {
+          "tableId": "9f3230bf-96cf-975c-f4a0-514c43b9958d",
+          "columnIds": [
+            "444f8732-b3b3-5fb0-fe3e-68fb8436b73a"
+          ],
+          "x": 429,
+          "y": 97,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2659d6f7-3182-beeb-1eac-551618fd735a",
+          "columnIds": [
+            "f84b48aa-887a-b9cb-da24-14476969d7cb"
+          ],
+          "x": 512,
+          "y": 185.25,
+          "direction": "left"
+        },
+        "id": "3abac0b3-6b26-3dde-64b7-2288a84d3fb5",
+        "relationshipType": "ZeroOneN"
+      }
+    ]
+  }
+}
